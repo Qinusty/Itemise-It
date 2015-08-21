@@ -1,0 +1,23 @@
+﻿<form class="form-inline">
+    <div class="form-group">
+        <div class="combobox-container">
+            <input type="hidden" name="inline" value=""> 
+            <div class="input-group"> 
+                <input type="text" autocomplete="off" placeholder="Select a Champion" class="combobox form-control"> 
+                <span class="input-group-addon dropdown-toggle" data-dropdown="dropdown"> 
+                    <span class="caret"></span> 
+                    <span class="glyphicon glyphicon-remove"></span> 
+                </span>
+            </div> 
+        </div>
+        <select class="combobox form-control" style="display: none">
+            <option></option>
+            <!-- c# for loop add options for each champion. -->
+        </select>
+    </div>
+</form>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.combobox').combobox();
+  });
+</script>

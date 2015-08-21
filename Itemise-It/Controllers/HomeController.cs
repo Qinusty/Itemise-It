@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using RiotApi.Net.RestClient;
 using RiotApi.Net.RestClient.Configuration;
 using System.Data;
+
 namespace Itemise_It.Controllers
 {
     public class HomeController : Controller
@@ -13,8 +14,11 @@ namespace Itemise_It.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            
-            return View();
+            return View("Index");
+        }
+        public ActionResult About()
+        {
+            return View("About");
         }
     }
 }
