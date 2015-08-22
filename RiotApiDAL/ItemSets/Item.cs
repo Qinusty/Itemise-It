@@ -20,7 +20,11 @@ namespace RiotApiDAL.ItemSets
         /// </summary>
         [JsonProperty]
         int count { get; set; }
-
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="_id">This is a string, item ID's must be in the form of a string when serialized to ensure that the League of Legends client can load it.</param>
+        /// <param name="_count"></param>
         public Item(string _id, int _count = 0)
         {
             id = _id;
