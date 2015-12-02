@@ -14,11 +14,11 @@ namespace RiotApiDAL
         {
             using (SmtpClient client = new SmtpClient("mail.gmx.com"))
             {
-                MailMessage message = new MailMessage("ItemiseLogger@gmx.co.uk", "jrsmith9822@gmail.com");
+                MailMessage message = new MailMessage("EMAIL_FROM", "EMAIL_TO");
                 message.Body = body; message.Subject = subject;
                 
                 client.EnableSsl = true;
-                client.Credentials = new NetworkCredential("ItemiseLogger@gmx.co.uk", "BravoTesco123");
+                client.Credentials = new NetworkCredential("EMAIL_FROM", "PASSWORD");
                 client.Send(message);
             }
         }
