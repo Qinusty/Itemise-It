@@ -11,7 +11,7 @@ namespace UpdateItemise_It
     {
         public Emailer()
         {
-            var fromAddress = new MailAddress("jrsmith9822@gmail.com", "From Name");
+            var fromAddress = new MailAddress("from@example.com", "From Name");
             var toAddress = new MailAddress("to@example.com", "To Name");
             const string fromPassword = "fromPassword";
             const string subject = "Subject";
